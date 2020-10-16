@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.careu.emergencyNumbersCate"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="15px"
+        android:layout_marginBottom="15px"
+        android:backgroundTint="#D1522A"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:background="@drawable/rounded_edittext"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".05"
+            android:paddingLeft="50px"
+
+            app:srcCompat="@drawable/ic_phone_in_talk_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="10px"
+            android:paddingRight="100px"
+            android:text="Emergency Service Numbers"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="center_vertical"
+            android:textSize="55px"></TextView>
+
+
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/favorites_grid"
+        android:layout_width="363dp"
+        android:layout_height="341dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="250px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="100px"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <Button
+
+            android:layout_width="144dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="15px"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#29A536"
+            android:drawableTop="@drawable/ic_local_hospital_black_24dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:text="Health"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:onClick="helath_click"
+
+            />
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="15px"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#F1110C"
+            android:drawableTop="@drawable/ic_account_balance_black_24dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:text="Police"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:onClick="police_click"/>
+
+        <Button
+
+            android:layout_width="144dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="15px"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#D1522A"
+            android:drawableTop="@drawable/ic_baseline_fireplace_24"
+            android:gravity="bottom|center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:text="Fire Brigade"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:onClick="fire_click"
+            />
+
+        <Button
+
+            android:layout_width="144dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="15px"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#8F7608"
+            android:drawableTop="@drawable/ic_baseline_emoji_objects_24"
+            android:gravity="bottom|center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:text="Others"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:onClick="others"/>
+    </GridLayout>
+
+
+
+
+</LinearLayout>

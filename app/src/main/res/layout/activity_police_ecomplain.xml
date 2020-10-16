@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".policeEcomplain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="15px"
+        android:backgroundTint="#EEE82723"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:background="@drawable/rounded_edittext"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".05"
+            android:paddingLeft="100px"
+            app:srcCompat="@drawable/ic_account_balance_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:paddingRight="100px"
+            android:text="Police Emergency Service"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="center_vertical"
+            android:textSize="55px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your District"
+                        android:layout_weight="2"
+                        android:padding="10px"
+                        android:background="@drawable/rounded_edittext">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#DFDBE4">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/Dis"
+                            ></Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nearest Police Station"
+                        android:layout_weight="2"
+                        android:padding="10px"
+                        android:background="@drawable/rounded_edittext">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#DFDBE4">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/Dis_pos"
+                            ></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Evidence"
+                        android:layout_weight="18"
+                        android:padding="10px"
+                        android:background="@drawable/rounded_edittext">
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/uploadbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10px"
+                        android:layout_weight=".5"
+                        android:onClick="uploadEvidence"
+                        android:background="@drawable/ic_baseline_add_circle_24"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginTop="10px">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Special Notes"
+                        android:layout_weight="2"
+                        android:padding="10px"
+                        android:background="@drawable/rounded_edittext">
+                    </TextView>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60px"
+                        android:layout_marginTop="10px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginLeft="10px"
+                        android:padding="50px"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#DFDBE4">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Request the Ambulance"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#EEE82723"
+                        android:layout_marginRight="10dp"
+                        ></Button>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#EEE82723"
+                        android:onClick="cancecl_req">
+
+                    </Button>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="70px">-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Request the police Support"-->
+<!--            android:background="@drawable/rounded_edittext"-->
+<!--            android:backgroundTint="#EEE82723"-->
+<!--            ></Button>-->
+<!--    </LinearLayout>-->
+
+
+</LinearLayout>
